@@ -1,0 +1,76 @@
+body
+{
+	background: rgb(207,230,198); /* Цвет фона */
+}
+.clearfix
+{
+	clear:both;
+}
+ul
+{
+	width: 350px; /* Ширина меню */
+	list-style: none; /* Для списка убираем маркеры */
+	margin: 0; /* Нет отступов вокруг */
+	padding: 0; /* Убираем поля вокруг текста */
+	font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+	font-size: 10pt; /* Размер названий в пункте меню */
+}
+li ul
+{
+	width:150px;
+	position: absolute; /* Подменю позиционируются абсолютно */
+	display: none; /* Скрываем подменю */
+	margin-left: 340px; /* Сдвигаем подменю вправо */
+	margin-top: -2em; /* Сдвигаем подменю вверх */
+}
+li a
+{
+	display: block; /* Ссылка как блочный элемент */
+	padding: 5px; /* Поля вокруг надписи */
+	text-decoration: none; /* Подчеркивание у ссылок убираем */
+	color: #666; /* Цвет текста */
+	border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
+	background-color: #f0f0f0; /* Цвет фона */
+	border-bottom: none; /* Границу снизу не проводим */
+}
+li a:hover
+{
+	color: #ffe; /* Цвет текста активного пункта */
+	background-color: #5488af; /* Цвет фона активного пункта */
+}
+li:hover ul
+{ 
+	display: block; /* При выделении пункта курсором мыши отображается подменю */
+}
+.brd
+{
+	border-bottom: 1px solid #ccc; /* Линия снизу */
+}
+#leftPanel
+{
+	float:left;
+}
+#rightPanel
+{
+	float:left;
+	margin-left:80px;
+	margin-top:0px;
+	width:800px;
+	height:auto;
+}
+#upRightPanel, #dounRightPanel
+{
+	margin-left:20px;
+	margin-top:20px;
+	width:760px;
+}
+#img1
+{
+	height:100px;
+	display:none;
+}
+#img2
+{
+	height:150px;
+	display:none;
+}
